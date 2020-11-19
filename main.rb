@@ -1,5 +1,4 @@
-  
-def bubble_sort(array)
+  def bubble_sort(array)
   flag = 1
   while flag != 0
     flag = 0
@@ -42,5 +41,3 @@ def bubble_sort_by(array)
 end
 
 puts bubble_sort_by(["hi","hello","hey"]) { |left,right| left.length - right.length}
-
-
