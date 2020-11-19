@@ -8,7 +8,7 @@ def bubble_sort(array)
       b = array[index + 1]
       if a > b
         array[index] = b
-        array[index+1] = a
+        array[index + 1] = a
         flag = 1
       end
       index += 1
@@ -31,13 +31,13 @@ def bubble_sort_by(array)
       difference = left.length - right.length
       if difference.positive?
         array[index] = right
-        array[index+1] = left
+        array[index + 1] = left
         flag = 1
       end
       index += 1
     end
   end
-  p array
+  array
 end
 
 # bubble_sort_by(["hi","hello","hey"]) { |left,right| left.length - right.length}
