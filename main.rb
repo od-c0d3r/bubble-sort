@@ -14,10 +14,8 @@ def bubble_sort(array)
       index += 1
     end
   end
-  array
+  p array
 end
-
-# puts bubble_sort([4,3,5,2,100,1,800,500,4,300])
 
 def bubble_sort_by(array)
   flag = 1
@@ -37,7 +35,5 @@ def bubble_sort_by(array)
       index += 1
     end
   end
-  array
+  p array
 end
-
-# bubble_sort_by(["hi","hello","hey"]) { |left,right| left.length - right.length}
