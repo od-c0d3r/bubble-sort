@@ -1,4 +1,4 @@
-  def bubble_sort(array)
+def bubble_sort(array)
   flag = 1
   while flag != 0
     flag = 0
