@@ -28,16 +28,16 @@ def bubble_sort_by(array)
       left = array[index]
       right = array[index+1]
       yield(left,right)
-      if left.length > right.length
+      difference = left.length - right.length
+      if difference > 0
         array[index] = right
         array[index+1] = left
         flag = 1
       end
-      print left.length - right.length
       index += 1
     end
   end
-  array
+   p array
 end
 
-puts bubble_sort_by(["hi","hello","hey"]) { |left,right| left.length - right.length}
+# bubble_sort_by(["hi","hello","hey"]) { |left,right| left.length - right.length}
